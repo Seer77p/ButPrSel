@@ -1,6 +1,7 @@
 public static class SortBubble
 {
     //public static void SortSelection(int[] collection) 
+    
     /// <summary>
     /// Сортировка пузырьком
     /// </summary>
