@@ -1,10 +1,11 @@
 ﻿using static Sorting; //Дает возможность пользоваться функцией из файла Sirting.cs
 using static Infrastructure; //Дает возможность пользоваться функцией из файла Infrastructure.cs
 using static SortBubble; //Дает возможность пользоваться функцией из файла Sirting.cs
-                      // int[] array = CreateArray(10);  // Классическая запись
-                      // Print(array);
-                      // SortSelection(array);
-                      // Print(array);
+using static QuickSorting;
+// int[] array = CreateArray(10);  // Классическая запись
+// Print(array);
+// SortSelection(array);
+// Print(array);
 
 // 10.CreateArray() //Запись при добавлении this в функциях
 //   .Print()
@@ -28,3 +29,12 @@ Console.WriteLine();
   .Print(" | ")//изменяем для редактировния вывода в консоль
   .SortBubbles()// Сортировка пузырьком
   .Print(" <> ");//изменяем для редактировния вывода в консоль
+
+Console.WriteLine();
+
+int size = 100;
+var arr = size.CreateArray()
+  .Print(" | ")//изменяем для редактировния вывода в консоль
+  .SortQuick(0, size-1)// Быстрая сортировка
+  .Print(" <> ");//изменяем для редактировния вывода в консоль
+
