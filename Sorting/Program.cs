@@ -2,6 +2,7 @@
 using static Infrastructure; //Дает возможность пользоваться функцией из файла Infrastructure.cs
 using static SortBubble; //Дает возможность пользоваться функцией из файла Sirting.cs
 using static QuickSorting;
+using static CountingSort;
 // int[] array = CreateArray(10);  // Классическая запись
 // Print(array);
 // SortSelection(array);
@@ -18,6 +19,7 @@ using static QuickSorting;
 //   .Print()
 //   .SortSelection()
 //   .Print();
+Console.WriteLine();
 10.CreateArray(10, 100) 
   .Print(" | ")//изменяем для редактировния вывода в консоль
   .SortSelection()
@@ -32,9 +34,15 @@ Console.WriteLine();
 
 Console.WriteLine();
 
-int size = 100;
+int size = 20;
 var arr = size.CreateArray()
   .Print(" | ")//изменяем для редактировния вывода в консоль
   .SortQuick(0, size-1)// Быстрая сортировка
   .Print(" <> ");//изменяем для редактировния вывода в консоль
 
+Console.WriteLine();
+
+10.CreateArray(10, 50)
+  .Print(" || ")
+  .SortCounting()
+  .Print(" | ");
